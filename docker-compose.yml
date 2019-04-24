@@ -1,0 +1,13 @@
+version: '3'
+services:
+    pycontw-2015-archive:
+        build: .
+        container_name: pycontw-2015apac
+        hostname: pycontw-2015apac
+        ports:
+            - 8015:80
+
+networks:
+    default:
+        external:
+            name: pycontw-net
