@@ -2,6 +2,7 @@ version: '3'
 services:
     pycontw-2015apac:
         build: .
+        restart: always
         container_name: pycontw-2015apac
         hostname: pycontw-2015apac
         ports:
